@@ -63,4 +63,4 @@ For questions, suggestions, or issues, feel free to open an issue on this reposi
 
 ---
 
-**Built by Pharmyx** see 'LICENSE'
+**Built by Pharmyx** see (LICENSE)
