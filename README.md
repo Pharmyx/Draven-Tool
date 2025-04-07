@@ -63,5 +63,5 @@ For questions, suggestions, or issues, feel free to open an issue on this reposi
 
 ---
 
-**Built by Pharmyx** [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+**Built by Pharmyx** [!(https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
