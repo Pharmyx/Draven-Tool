@@ -59,7 +59,7 @@ Draven is provided for educational and ethical purposes only. The author is not 
 ---
 
 ## 📧 Contact
-For questions, suggestions, or issues, feel free to open an issue on this repository or contact the author at [your-email@example.com](mailto:your-email@example.com).
+For questions, suggestions, or issues, feel free to open an issue on this repository or contact the author at pharmyx on discord.
 
 ---
 
