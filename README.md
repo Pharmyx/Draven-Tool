@@ -47,7 +47,7 @@ This will install all necessary dependencies (e.g., `colorama`, `python-nmap`, `
 ---
 
 ## 🛡️ Legal Disclaimer
-Draven is provided for educational and ethical purposes only. The author is not responsible for any misuse or damage caused by this tool. By using Draven, you agree to comply with all applicable laws and regulations.
+**Draven** is provided for educational and ethical purposes only. The author is not responsible for any misuse or damage caused by this tool. By using Draven, you agree to comply with all applicable laws and regulations.
 
 ---
 
@@ -59,8 +59,8 @@ Draven is provided for educational and ethical purposes only. The author is not 
 ---
 
 ## 📧 Contact
-For questions, suggestions, or issues, feel free to open an issue on this repository or contact the author at pharmyx on discord.
+For questions, suggestions, or issues, feel free to open an issue on this repository or contact the author at **pharmyx** on discord.
 
 ---
 
-*Built by Pharmyx*
+**Built by Pharmyx**
