@@ -1,0 +1,11 @@
+requests>=2.31.0
+colorama>=0.4.6
+python-nmap>=0.7.1
+scapy>=2.5.0
+beautifulsoup4>=4.12.2
+paramiko>=3.4.0
+pyfiglet>=1.0.2
+dnspython>=2.6.1
+python-whois>=0.9.4
+shodan>=1.31.0
+selenium>=4.25.0
