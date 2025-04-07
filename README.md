@@ -1,7 +1,6 @@
 Draven Installation via GitHub
 Follow these steps to install Draven from GitHub:
 Clone the Repository:
-bash
 
 git clone https://github.com/Pharmyx/Draven-Tool
 cd Draven-Tool
