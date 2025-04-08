@@ -84,7 +84,6 @@ def username_lookup():
 
     print(Fore.YELLOW + f"\nSearching for username '{username}' across platforms..." + Style.RESET_ALL)
 
-    # Define platforms to check (URL templates)
     platforms = {
         "Twitter": f"https://twitter.com/{username}",
         "GitHub": f"https://github.com/{username}",
@@ -101,7 +100,6 @@ def username_lookup():
     results = []
     headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'}
 
-    # Check each platform
     for platform, url in platforms.items():
         try:
             response = requests.get(url, headers=headers, timeout=5)
@@ -121,7 +119,7 @@ def username_lookup():
             result = f"[!] {platform}: Error - {str(e)}"
             results.append(result)
             print(Fore.RED + result + Style.RESET_ALL)
-        time.sleep(1)  # Avoid rate limiting
+        time.sleep(1)  
 
     print(Fore.CYAN + "\nResults displayed above. Copy them now if needed." + Style.RESET_ALL)
     input(Fore.WHITE + "\nPress Enter to return..." + Style.RESET_ALL)
