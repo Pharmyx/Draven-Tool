@@ -8,6 +8,5 @@ dnspython
 python-whois
 shodan
 selenium
-ftplib
 netifaces
 requests
