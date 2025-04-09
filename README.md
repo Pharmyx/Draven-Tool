@@ -172,4 +172,4 @@ For questions, suggestions, or issues:
 
 ---
 
-Built by **Pharmyx** – see the LICENSE
+Built by **Pharmyx** – see the [LICENSE](LICENSE)
