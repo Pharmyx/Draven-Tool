@@ -6,7 +6,8 @@ paramiko
 pyfiglet
 dnspython
 python-whois
-selenium
-requests
-netifaces
 shodan
+selenium
+ftplib
+netifaces
+requests
