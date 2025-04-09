@@ -125,7 +125,7 @@ def username_lookup():
             results.append(result)
             color = Fore.GREEN if "[+]" in result else Fore.YELLOW if "[-]" in result else Fore.RED
             print(color + result + Style.RESET_ALL)
-            time.sleep(0.1)  # Small delay to prevent rate limiting
+            time.sleep(0.1) 
 
     print(Fore.CYAN + "\nResults displayed above. Copy them now if needed." + Style.RESET_ALL)
     input(Fore.WHITE + "\nPress Enter to return..." + Style.RESET_ALL)
@@ -401,7 +401,7 @@ def website_crawler():
                         'severity': 'Medium'
                     })
                 
-                time.sleep(0.5)  # Reduced delay for efficiency
+                time.sleep(0.5)
             
             except Exception as e:
                 print(Fore.YELLOW + f"Error crawling {current_url}: {e}" + Style.RESET_ALL)
