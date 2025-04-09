@@ -1,66 +1,175 @@
-# Draven Tool V3.0 🛠️
+# ⚔️ Draven Tool V3.0
 
-**Draven** is an advanced ethical hacking tool designed for authorized security testing. Built for pentesters and security researchers, it provides a suite of tools to perform OSINT, network scanning, and more—all in a single, easy-to-use interface.
+**Draven** is an advanced ethical hacking tool designed for **authorized security testing**. Built for **pentesters and security researchers**, it provides a suite of tools to perform **OSINT**, **network scanning**, and more — all in a **single, easy-to-use interface**.
 
 ---
 
 ## 🚀 Getting Started
 
-Follow these steps to download, set up, and run the Draven tool:
+Follow these steps to download, set up, and run **Draven** on **Kali Linux**, **Windows**, **macOS**, or other Linux distributions.
 
-### 1. Download the Project
-- On the GitHub repository page, click the green **Code** button.
-- Select **Download ZIP** to download the project as a ZIP file.
-- Extract the ZIP file to a folder on your computer.
+---
 
-### 2. Install Python (if not already installed)
-- Ensure you have [Python 3](https://www.python.org/downloads/) installed on your system.
-- During installation, check the box to **Add Python to PATH** to run Python from the command line.
+## 📥 1. Download the Project
 
-### 3. Install Dependencies
-- Open a command prompt (CMD on Windows, Terminal on macOS/Linux):
-  - On Windows: Press `Win + R`, type `cmd`, and press Enter.
-  - On macOS/Linux: Open the Terminal application.
-- Navigate to the extracted project folder using the `cd` command. For example:
+### Option A: Clone with Git
 
-  cd path\to\extracted\folder
+git clone https://github.com/Pharmyx/Draven-Tool.git cd Draven-Tool
 
-- Install the required Python libraries by running:
+### Option B: Download ZIP
 
-  pip install -r requirements.txt
+1. Go to the [GitHub repository](https://github.com/Pharmyx/Draven-Tool).
+2. Click the green `Code` button → `Download ZIP`.
+3. Extract the ZIP file to a folder on your computer.
 
-This will install all necessary dependencies (e.g., `colorama`, `python-nmap`, `scapy`, etc.).
+---
 
-### 4. Run the Tool
-- In the same command prompt, run the script:
+## 🐍 2. Install Python 3
 
-  python draven.py
+### ✅ Kali Linux (Pre-installed)
 
-- The Draven tool will launch, and you can select options from the menu to use its features.
+python3 --version
+
+### 🪟 Windows / 🍎 macOS / 🐧 Other Linux
+
+Download Python 3 from [https://www.python.org](https://www.python.org)
+
+> 💡 On **Windows**, check the box to **Add Python to PATH** during installation.
+
+---
+
+## 🔧 3. Install System Dependencies
+
+### 📦 Kali Linux / Ubuntu / Other Linux
+
+sudo apt update sudo apt install python3 python3-pip python3-venv nmap libpcap-dev chromium chromium-driver -y
+
+### 🪟 Windows
+
+1. Install [Nmap](https://nmap.org) and ensure it’s added to your **PATH**.
+2. Install [Google Chrome](https://www.google.com/chrome/).
+3. Download [ChromeDriver](https://chromedriver.chromium.org) (matching your Chrome version).
+4. Extract and place ChromeDriver in a folder in your **PATH** (e.g., `C:\Program Files\ChromeDriver`).
+
+### 🍎 macOS
+
+Install Homebrew if not already installed:
+
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+Then install the dependencies:
+
+brew install python nmap libpcap chromedriver
+
+Ensure `chromedriver` is in your **PATH**.
+
+---
+
+## 🧪 4. Set Up a Virtual Environment (Recommended)
+
+Navigate to the project folder:
+
+cd path/to/Draven-Tool
+
+Example for Kali Linux:
+
+cd ~/Downloads/Draven-Tool-main
+
+Create a virtual environment:
+
+python3 -m venv venv
+
+### Activate the virtual environment:
+
+**Linux/macOS:**
+
+source venv/bin/activate
+
+**Windows:**
+
+venv\Scripts\activate
+
+> 🧠 Your terminal prompt should now show `(venv)`.
+
+---
+
+## ⚠️ Kali Linux Users Note
+
+Kali marks Python as "externally managed" (PEP 668). Using a virtual environment avoids `pip install` errors.  
+**⚠️ Do NOT use `--break-system-packages`.**
+
+---
+
+## 📦 5. Install Python Dependencies
+
+With the virtual environment activated:
+
+pip install -r requirements.txt
+
+### If `requirements.txt` is missing, create it manually:
+
+echo -e "colorama\npython-nmap\nscapy\nbeautifulsoup4\nparamiko\npyfiglet\ndnspython\npython-whois\nshodan\nselenium\nnetifaces\nrequests" > requirements.txt
+
+### Install packages individually if needed:
+
+Example:
+
+pip install shodan
+
+---
+
+## ▶️ 6. Run the Tool
+
+Run the tool:
+
+python3 draven.py
+
+If root access is required (e.g., for Nmap or scapy):
+
+sudo venv/bin/python3 draven.py
+> ⚠️ Only use `sudo` when required.
 
 ---
 
 ## 📝 Notes
-- **Dependencies**: Ensure all dependencies are installed correctly. If `pip install -r requirements.txt` fails, you may need to install some dependencies manually (e.g., `python-nmap` requires Nmap to be installed on your system).
-- **Legal Warning**: This tool is for ethical security testing only. Use it only on systems you have explicit permission to test. Unauthorized use is illegal and may result in severe legal consequences.
+
+- Ensure all system and Python dependencies are installed properly.
+- Some features (e.g., Nmap, packet sniffing) require **root privileges**.
+- If `selenium` fails, verify ChromeDriver is installed and version matches Chrome.
+- Use a virtual environment to avoid PEP 668 errors on Kali Linux.
 
 ---
 
-## 🛡️ Legal Disclaimer
-**Draven** is provided for educational and ethical purposes only. The author is not responsible for any misuse or damage caused by this tool. By using Draven, you agree to comply with all applicable laws and regulations.
+## ⚖️ Legal Warning
+
+**This tool is for authorized security testing only.**  
+Unauthorized use is illegal and may result in **severe legal consequences.**
 
 ---
 
-## 🌟 Features
-- **OSINT Tools**: Username lookup, IP tracking, email investigation, and more.
-- **Network Scanning**: Advanced Nmap scans, ARP spoof detection, and packet sniffing.
-- **Hacking Tools**: SSH brute force, network traffic analysis, and more (for authorized use only).
+## 📜 Legal Disclaimer
+
+Draven is provided for **educational and ethical purposes only**.  
+The author is **not responsible** for any misuse or damage caused.  
+By using Draven, you agree to comply with **all applicable laws** and regulations.
 
 ---
 
-## 📧 Contact
-For questions, suggestions, or issues, feel free to open an issue on this repository or contact the author at **pharmyx** on discord.
+## 🧰 Features
+
+- **OSINT Tools** — Username lookup, IP tracking, email investigation, and more.
+- **Network Scanning** — Advanced Nmap scans, ARP spoof detection, packet sniffing.
+- **Hacking Tools** — SSH brute force, network traffic analysis (for ethical use only).
 
 ---
 
-**Built by Pharmyx** – see the [LICENSE](LICENSE)
+## 📬 Contact
+
+For questions, suggestions, or issues:
+
+- Open an issue on the GitHub repository  
+- Contact the author on Discord: **pharmyx**
+
+---
+
+Built by **Pharmyx** – see the LICENSE
