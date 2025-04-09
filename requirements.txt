@@ -9,3 +9,4 @@ python-whois
 selenium
 requests
 netifaces
+shodan
