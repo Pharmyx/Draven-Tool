@@ -1,4 +1,4 @@
-# Draven Tool V2.0 🛠️
+# Draven Tool V3.0 🛠️
 
 **Draven** is an advanced ethical hacking tool designed for authorized security testing. Built for pentesters and security researchers, it provides a suite of tools to perform OSINT, network scanning, and more—all in a single, easy-to-use interface.
 
